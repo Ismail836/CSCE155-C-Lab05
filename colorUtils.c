@@ -15,3 +15,19 @@ int toGrayScaleAverage(int r, int g, int b) {
   //TODO: test this, it may be wrong!
   return (r + g + b) / 3;
 }
+
+int toGraysacleLightness(int r,int g, int b)
+{
+  int max = r;
+  int min = r;
+  if(max > g && max > b)
+  {
+    max = r;
+  }
+  else if(g > max && g> b)
+  {
+    max =g;
+  }
+  else{
+    max = b;
+  }}
